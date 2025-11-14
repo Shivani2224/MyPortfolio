@@ -9,7 +9,7 @@ const Projects = () => {
       title: "React Tic-Tac-Toe",
       description:
         "My first real React project! Built this to understand how state actually works. Spent way too long figuring out the win condition logic, but learned a ton about managing state and component re-renders.",
-      image: "public\images\projects\Tic-Tac-Toe.png",
+      image: "/images/projects/Tic-Tac-Toe.png",
       tags: ["React", "JavaScript", "CSS", "Game Logic"],
       github: "https://github.com/Shivani2224/Tic-Tac-Toe-React/",
       live: "",
