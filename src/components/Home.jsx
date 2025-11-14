@@ -51,13 +51,12 @@ const Home = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
           >
-            A passionate{" "}
-            <span className="font-semibold text-gray-800 bg-white/90 px-2 py-1 rounded">
-              Front-End Developer & UX/UI Designer
-            </span>
+            I build websites that people actually enjoy using.
             <br />
-            crafting clean, interactive, and user-friendly web experiences using
-            React, Tailwind CSS, and modern web technologies.
+            <span className="font-semibold text-gray-800 bg-white/90 px-2 py-1 rounded">
+              Front-end developer
+            </span>{" "}
+            who loves turning design ideas into real, working code with React & Tailwind.
           </motion.p>
 
           <motion.div
@@ -72,7 +71,7 @@ const Home = () => {
               className="px-8 py-4 text-lg font-semibold bg-white/95 text-primary-dark border-none rounded-full cursor-pointer transition-all duration-300 inline-flex items-center hover:bg-white hover:-translate-y-0.5 hover:shadow-xl"
               onClick={(e) => handleSmoothScroll(e, "#projects")}
             >
-              See My Work
+              Check out my projects
               <span className="ml-2">→</span>
             </motion.button>
             <motion.button
@@ -81,7 +80,7 @@ const Home = () => {
               className="px-8 py-4 text-lg font-semibold bg-transparent text-white border-2 border-white rounded-full cursor-pointer transition-all duration-300 hover:bg-white hover:text-primary-dark hover:-translate-y-0.5"
               onClick={(e) => handleSmoothScroll(e, "#contact")}
             >
-              Get In Touch
+              Let's chat
             </motion.button>
           </motion.div>
 
@@ -101,7 +100,7 @@ const Home = () => {
               <FaGithub />
             </motion.a>
             <motion.a
-              href="www.linkedin.com/in/shivani-patel-aa2846178"
+              href="https://www.linkedin.com/in/shivani-patel-aa2846178"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ y: -5, scale: 1.1 }}

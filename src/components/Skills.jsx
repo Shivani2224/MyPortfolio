@@ -92,10 +92,10 @@ const Skills = () => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-4xl md:text-5xl text-center mb-5 text-primary-dark font-bold">
-            Skills & Tools
+            My Toolkit
           </h2>
           <p className="text-center text-slate-600 mb-12 text-lg">
-            Technologies I work with to bring ideas to life
+            Technologies I use to build stuff
           </p>
 
           <motion.div

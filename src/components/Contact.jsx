@@ -6,7 +6,6 @@ import {
   FaPhone,
   FaLinkedin,
   FaGithub,
-  FaTwitter,
 } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
 
@@ -68,11 +67,10 @@ const handleSubmit = (e) => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-4xl md:text-5xl text-center mb-5 text-primary-dark font-bold">
-            Get In Touch
+            Let's Work Together
           </h2>
           <p className="text-center text-slate-600 mb-12 text-lg max-w-2xl mx-auto">
-            Have a project in mind or want to discuss opportunities? I'd love to
-            hear from you!
+            Got a project in mind? Need a developer? Or just want to say hi? Drop me a message!
           </p>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
@@ -87,10 +85,9 @@ const handleSubmit = (e) => {
                   Let's Connect
                 </h3>
                 <p className="text-slate-600 mb-6 leading-relaxed">
-                  I'm always excited to work on new projects and collaborate
-                  with passionate individuals and teams. Whether you have a
-                  specific project in mind or just want to explore
-                  possibilities, don't hesitate to reach out.
+                  I'm currently open to new opportunities and collaborations.
+                  If you're looking for someone who's eager to learn and contribute
+                  to your team, let's talk! I respond pretty quickly (usually within 24 hours).
                 </p>
               </div>
 
@@ -133,11 +130,11 @@ const handleSubmit = (e) => {
 
               <div className="text-center">
                 <h4 className="font-semibold mb-3 text-primary-dark">
-                  Follow Me
+                  Connect with me
                 </h4>
                 <div className="flex gap-4 justify-center">
                   <motion.a
-                    href="https://linkedin.com"
+                    href="https://www.linkedin.com/in/shivani-patel-aa2846178"
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{ y: -5, scale: 1.1 }}
@@ -146,22 +143,13 @@ const handleSubmit = (e) => {
                     <FaLinkedin />
                   </motion.a>
                   <motion.a
-                    href="https://github.com"
+                    href="https://github.com/Shivani2224"
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{ y: -5, scale: 1.1 }}
                     className="w-11 h-11 rounded-full bg-primary text-white flex items-center justify-center text-xl no-underline transition-all duration-300 hover:bg-primary-dark"
                   >
                     <FaGithub />
-                  </motion.a>
-                  <motion.a
-                    href="https://twitter.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    whileHover={{ y: -5, scale: 1.1 }}
-                    className="w-11 h-11 rounded-full bg-primary text-white flex items-center justify-center text-xl no-underline transition-all duration-300 hover:bg-primary-dark"
-                  >
-                    <FaTwitter />
                   </motion.a>
                 </div>
               </div>
@@ -178,14 +166,14 @@ const handleSubmit = (e) => {
                 className="bg-white p-8 rounded-xl shadow-lg"
               >
                 <h3 className="text-2xl font-bold mb-6 text-primary-dark">
-                  Send Message
+                  Say Hello 👋
                 </h3>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
                   <input
                     type="text"
                     name="name"
-                    placeholder="Your Name"
+                    placeholder="Your name"
                     value={formData.name}
                     onChange={handleChange}
                     required
@@ -194,7 +182,7 @@ const handleSubmit = (e) => {
                   <input
                     type="email"
                     name="email"
-                    placeholder="your@example.com"
+                    placeholder="your.email@example.com"
                     value={formData.email}
                     onChange={handleChange}
                     required
@@ -205,7 +193,7 @@ const handleSubmit = (e) => {
                 <input
                   type="text"
                   name="subject"
-                  placeholder="Subject"
+                  placeholder="What's this about?"
                   value={formData.subject}
                   onChange={handleChange}
                   required
@@ -214,7 +202,7 @@ const handleSubmit = (e) => {
 
                 <textarea
                   name="message"
-                  placeholder="Tell me about your project..."
+                  placeholder="Your message here..."
                   rows="6"
                   value={formData.message}
                   onChange={handleChange}
