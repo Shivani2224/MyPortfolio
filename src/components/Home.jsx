@@ -94,6 +94,7 @@ const Home = () => {
               href="https://github.com/Shivani2224"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Visit my GitHub profile"
               whileHover={{ y: -5, scale: 1.1 }}
               className="w-12 h-12 flex items-center justify-center bg-white/20 backdrop-blur-md rounded-full text-white text-xl transition-all duration-300 hover:bg-white hover:text-primary no-underline"
             >
@@ -103,6 +104,7 @@ const Home = () => {
               href="https://www.linkedin.com/in/shivani-patel-aa2846178"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Connect with me on LinkedIn"
               whileHover={{ y: -5, scale: 1.1 }}
               className="w-12 h-12 flex items-center justify-center bg-white/20 backdrop-blur-md rounded-full text-white text-xl transition-all duration-300 hover:bg-white hover:text-primary no-underline"
             >
@@ -110,6 +112,7 @@ const Home = () => {
             </motion.a>
             <motion.a
               href="mailto:patelshivani1410@gmail.com"
+              aria-label="Send me an email"
               whileHover={{ y: -5, scale: 1.1 }}
               className="w-12 h-12 flex items-center justify-center bg-white/20 backdrop-blur-md rounded-full text-white text-xl transition-all duration-300 hover:bg-white hover:text-primary no-underline"
             >

@@ -108,7 +108,7 @@ const Projects = () => {
                 <div className="h-48 relative overflow-hidden">
                   <img
                     src={project.image}
-                    alt={project.title}
+                    alt={`Screenshot of ${project.title} - ${project.description.substring(0, 60)}...`}
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end justify-center pb-4">
@@ -123,6 +123,7 @@ const Projects = () => {
                           href={project.github}
                           target="_blank"
                           rel="noopener noreferrer"
+                          aria-label={`View ${project.title} source code on GitHub`}
                           whileHover={{ scale: 1.1 }}
                           className="text-white text-2xl p-3 bg-white/20 rounded-full flex items-center justify-center transition-all duration-300 hover:bg-primary"
                         >
@@ -134,6 +135,7 @@ const Projects = () => {
                           href={project.live}
                           target="_blank"
                           rel="noopener noreferrer"
+                          aria-label={`View ${project.title} live demo`}
                           whileHover={{ scale: 1.1 }}
                           className="text-white text-2xl p-3 bg-white/20 rounded-full flex items-center justify-center transition-all duration-300 hover:bg-primary"
                         >
