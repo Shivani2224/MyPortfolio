@@ -16,27 +16,24 @@ const Home = () => {
       id="home"
       className="min-h-screen flex items-center justify-center bg-gradient-teal relative overflow-hidden"
     >
-      <div className="absolute w-full h-full overflow-hidden pointer-events-none">
-        <div className="absolute w-[300px] h-[300px] bg-white opacity-10 rounded-full top-[10%] left-[10%] animate-float"></div>
-        <div
-          className="absolute w-[200px] h-[200px] bg-white opacity-10 rounded-full top-[60%] right-[10%] animate-float"
-          style={{ animationDelay: "5s" }}
-        ></div>
-        <div
-          className="absolute w-[400px] h-[400px] bg-white opacity-10 rounded-full bottom-[-10%] left-[50%] animate-float"
-          style={{ animationDelay: "10s" }}
-        ></div>
+      {/* Optimized background decorations - using CSS only, no animations */}
+      <div className="absolute w-full h-full overflow-hidden pointer-events-none opacity-5">
+        <div className="absolute w-[300px] h-[300px] bg-white rounded-full top-[10%] left-[10%]"></div>
+        <div className="absolute w-[200px] h-[200px] bg-white rounded-full top-[60%] right-[10%]"></div>
+        <div className="absolute w-[400px] h-[400px] bg-white rounded-full bottom-[-10%] left-[50%]"></div>
       </div>
 
+      {/* Main content - 8pt grid spacing: 8, 16, 24, 32, 48, 64 */}
       <div className="w-full px-8 relative z-10 flex justify-center items-center min-h-[80vh]">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center w-full"
+          className="text-center w-full max-w-4xl mx-auto"
         >
+          {/* Heading - 32px bottom spacing */}
           <motion.h1
-            className="text-5xl md:text-7xl font-extrabold text-white mb-6 leading-tight"
+            className="text-5xl md:text-7xl font-extrabold text-white mb-8 leading-tight"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.8 }}
@@ -45,25 +42,27 @@ const Home = () => {
             <span className="text-primary-dark font-black">Shivani</span>
           </motion.h1>
 
+          {/* Subtitle - 48px bottom spacing */}
           <motion.p
-            className="text-xl text-white/95 leading-relaxed mb-8 max-w-2xl mx-auto"
+            className="text-xl text-white/95 leading-relaxed mb-12 max-w-2xl mx-auto px-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
           >
             I build websites that people actually enjoy using.
             <br />
-            <span className="font-semibold text-gray-800 bg-white/90 px-2 py-1 rounded">
+            <span className="font-semibold text-gray-800 bg-white/90 px-3 py-1 rounded">
               Front-end developer
             </span>{" "}
             who loves turning design ideas into real, working code with React & Tailwind.
           </motion.p>
 
+          {/* CTA Buttons - 16px gap, 48px bottom spacing */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.8 }}
-            className="flex justify-center items-center gap-6 mt-8 w-full flex-wrap"
+            className="flex justify-center items-center gap-4 mb-12 w-full flex-wrap"
           >
             <motion.button
               whileHover={{ scale: 1.05 }}
@@ -84,11 +83,12 @@ const Home = () => {
             </motion.button>
           </motion.div>
 
+          {/* Social Links - 16px gap */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8, duration: 0.8 }}
-            className="flex gap-6 justify-center mt-12"
+            className="flex gap-4 justify-center"
           >
             <motion.a
               href="https://github.com/Shivani2224"
@@ -122,14 +122,15 @@ const Home = () => {
         </motion.div>
       </div>
 
+      {/* Scroll indicator - 32px from bottom, 8px gap */}
       <motion.div
         className="absolute bottom-8 flex flex-col items-center gap-2 text-white animate-bounce-slow"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1, duration: 0.8 }}
       >
-        <span>Scroll Down</span>
-        <FaArrowDown className="text-xl" />
+        <span className="text-sm">Scroll Down</span>
+        <FaArrowDown className="text-base" />
       </motion.div>
     </section>
   );
