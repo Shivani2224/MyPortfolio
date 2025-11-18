@@ -15,13 +15,13 @@ const Projects = () => {
       live: "",
     },
     {
-      id: 3,
-      title: "E-commerce Platform",
+      id: 2,
+      title: "HR Management System",
       description:
-        "Shopping cart project where I dove into Redux for state management. Getting the cart logic right was challenging – handling quantities, totals, and keeping everything in sync. Still thinking about how I could improve the checkout flow.",
-      image: "/images/projects/ecommerce.png",
-      tags: ["React", "TailwindCSS", "Redux", "API Integration"],
-      github: "",
+        "A simple HR management web app built with React that helps manage employee data and streamline everyday HR tasks. The system includes features for attendance tracking, leave management, payslips, and time correction requests. It's designed with a clean and intuitive interface to simulate real HR workflows. This project helped me strengthen skills in state management, form handling, and building functional dashboard components.",
+      image: `${process.env.PUBLIC_URL}/images/projects/HR-management.png`,
+      tags: ["React", "JavaScript", "CSS", "Responsive"],
+      github: "https://github.com/Shivani2224/HR-management",
       live: "",
     },
     {

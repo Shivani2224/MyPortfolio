@@ -3,7 +3,14 @@
     "allow": [
       "Bash(rm:*)",
       "Bash(npm start)",
-      "Bash(mkdir:*)"
+      "Bash(mkdir:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push)",
+      "WebFetch(domain:shivani2224.github.io)",
+      "Bash(npm run deploy:*)",
+      "Bash(wc:*)",
+      "Bash(find:*)"
     ],
     "deny": [],
     "ask": []
