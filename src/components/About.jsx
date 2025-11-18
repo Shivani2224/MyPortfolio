@@ -37,45 +37,23 @@ const About = () => {
             </h3>
 
             <p className="text-lg leading-relaxed text-slate-600 mb-5">
-              I'm Shivani, a front-end developer based in Ontario. My journey into
-              coding wasn't exactly traditional – I started out in healthcare and
-              tech support, but I kept finding myself drawn to the tech side of things.
-              Eventually, I realized I'd rather be building the solutions than just
-              supporting them.
+              Hi! I'm Shivani, a front-end developer based in Ontario, Canada. I started my career in healthcare and tech support, but discovered my passion for building user-friendly digital experiences. That curiosity led me into web development, where I now focus on creating clean, responsive interfaces.
             </p>
 
             <p className="text-lg leading-relaxed text-slate-600 mb-5">
-              What I love most about web development is that moment when you finally
-              get something working after hours of debugging (we've all been there, right?).
-              I'm big on clean code and intuitive design – probably because my healthcare
-              background taught me to think from the user's perspective first.
-            </p>
-
-            <p className="text-lg leading-relaxed text-slate-600 mb-5">
-              These days, I'm focused on React and Tailwind CSS, always trying to
-              learn something new. Currently exploring TypeScript and trying to get
-              better at writing tests (it's a work in progress!).
+              I work mainly with React and Tailwind CSS, and I'm currently learning TypeScript and improving my testing skills. My background helps me approach every project with a strong user-first mindset—and I love that "finally fixed it" moment after a tricky debug session.
             </p>
 
             <div className="mt-8">
-              <h4 className="text-xl mb-4 text-primary-dark font-semibold">
-                A bit more about me:
-              </h4>
               <ul className="list-none p-0 space-y-3">
-                <li className="text-base text-slate-600">
-                  📍 Based in Ontario, Canada
+                <li className="text-lg text-slate-600">
+                  📍 Ontario, Canada
                 </li>
-                <li className="text-base text-slate-600">
-                  🎓 BCA grad (Bachelor of Computer Applications)
+                <li className="text-lg text-slate-600">
+                  🎓 BCA Graduate
                 </li>
-                <li className="text-base text-slate-600">
-                  💼 Former healthcare & tech support professional turned developer
-                </li>
-                <li className="text-base text-slate-600">
-                  ☕ Fueled by coffee and Stack Overflow (let's be honest)
-                </li>
-                <li className="text-base text-slate-600">
-                  🎯 Currently learning: TypeScript and testing best practices
+                <li className="text-lg text-slate-600">
+                  ☕ Fueled by coffee & curiosity
                 </li>
               </ul>
             </div>
