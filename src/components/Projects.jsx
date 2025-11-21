@@ -25,7 +25,7 @@ const Projects = () => {
       live: "",
     },
     {
-      id: 4,
+      id: 3,
       title: "Weather Dashboard",
       description:
         "Weather app using a public API. This taught me about async/await and error handling (because APIs don't always play nice). Also spent time making the UI update smoothly without those awkward loading states.",
@@ -81,6 +81,17 @@ const Projects = () => {
                     alt={`Screenshot of ${project.title}`}
                     className="w-full h-auto object-cover max-h-[300px]"
                   />
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`View ${project.title} source code on  GitHub`}
+                      className="absolute top-4 right-4 z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white bg-primary hover:bg-primary-dark p-3 rounded-full shadow-lg"
+                    >
+                      <FaGithub className="text-2xl" />
+                    </a>
+                  )}
                 </div>
               </motion.div>
 
@@ -92,9 +103,7 @@ const Projects = () => {
                     : "lg:text-left lg:col-start-1 lg:row-start-1"
                 }`}
               >
-                <p className="text-primary font-semibold text-sm mb-2 tracking-wide uppercase">
-                  Featured Project
-                </p>
+                <p className="text-primary font-semibold text-sm mb-2 tracking-wide uppercase"></p>
                 <h3 className="text-3xl md:text-4xl font-bold text-primary-dark mb-4">
                   {project.title}
                 </h3>
@@ -104,29 +113,22 @@ const Projects = () => {
                     {project.description}
                   </p>
                 </div>
-
-                <div className="flex flex-wrap items-center gap-3 lg:justify-end">
+                <div
+                  className={`lg:col-span-7 ${
+                    index % 2 !== 0
+                      ? "lg:text-left lg:col-start-6"
+                      : "lg:text-right lg:col-start-1 lg:row-start-1"
+                  }`}
+                >
                   {project.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="text-slate-600 font-medium text-sm hover:text-primary transition-colors"
+                      className="text-slate-600 font-medium text-sm hover:text-primary transition-colors mr-3"
                     >
                       {tag}
                     </span>
                   ))}
 
-                  {project.github && (
-                    <motion.a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label={`View ${project.title} source code on GitHub`}
-                      whileHover={{ scale: 1.1, y: -2 }}
-                      className="text-slate-600 hover:text-primary text-xl transition-colors ml-2"
-                    >
-                      <FaGithub />
-                    </motion.a>
-                  )}
                   {project.live && (
                     <motion.a
                       href={project.live}
