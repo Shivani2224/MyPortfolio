@@ -20,18 +20,17 @@ const Projects = () => {
       description:
         "A simple HR management web app built with React that helps manage employee data and streamline everyday HR tasks. The system includes features for attendance tracking, leave management, payslips, and time correction requests. It's designed with a clean and intuitive interface to simulate real HR workflows. This project helped me strengthen skills in state management, form handling, and building functional dashboard components.",
       image: `${process.env.PUBLIC_URL}/images/projects/HR-management.png`,
-      tags: ["React", "JavaScript", "CSS", "Responsive"],
+      tags: ["React", "JavaScript", "TailWind CSS", "Responsive"],
       github: "https://github.com/Shivani2224/HR-management",
       live: "",
     },
     {
       id: 3,
-      title: "Weather Dashboard",
-      description:
-        "Weather app using a public API. This taught me about async/await and error handling (because APIs don't always play nice). Also spent time making the UI update smoothly without those awkward loading states.",
-      image: "/images/projects/weather-dashboard.png",
+      title: "E-commerce website showcase ",
+      description:" A responsive e-commerce showcase built with React 19 and Vite that demonstrates a complete online shopping experience. Features include real-time product search, category filtering, multiple sorting options, and a persistent shopping cart with localStorage integration. Designed with Tailwind CSS for a clean, mobile-friendly interface. This project helped me strengthen skills in custom React hooks, state management, API integration, and component-based architecture.",
+      image: `${process.env.PUBLIC_URL}/images/projects/ecommerce-showcase.png`,
       tags: ["React", "API", "Charts.js", "Geolocation"],
-      github: "",
+      github: "https://github.com/Shivani2224/ecommerce-showcase",
       live: "",
     },
   ];
