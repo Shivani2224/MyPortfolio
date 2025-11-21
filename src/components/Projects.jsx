@@ -27,9 +27,9 @@ const Projects = () => {
     {
       id: 3,
       title: "E-commerce website showcase ",
-      description:" A responsive e-commerce showcase built with React 19 and Vite that demonstrates a complete online shopping experience. Features include real-time product search, category filtering, multiple sorting options, and a persistent shopping cart with localStorage integration. Designed with Tailwind CSS for a clean, mobile-friendly interface. This project helped me strengthen skills in custom React hooks, state management, API integration, and component-based architecture.",
+      description:"A fully responsive e-commerce demo built with React 19 and Vite, featuring real-time product search, category filters, sorting options, and a persistent shopping cart powered by localStorage. Styled with Tailwind CSS for a modern, mobile-first design. This project strengthened my skills in custom React hooks, state management, API integration, and component-driven development.",
       image: `${process.env.PUBLIC_URL}/images/projects/ecommerce-showcase.png`,
-      tags: ["React", "API", "Charts.js", "Geolocation"],
+      tags: ["React 19" , "Vite" , "Tailwind CSS" , "Responsive UI" ,"API Integration", "LocalStorage Cart" ],
       github: "https://github.com/Shivani2224/ecommerce-showcase",
       live: "",
     },
