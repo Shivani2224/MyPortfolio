@@ -12,7 +12,7 @@ const Projects = () => {
       image: `${process.env.PUBLIC_URL}/images/projects/Tic-Tac-Toe.png`,
       tags: ["React", "JavaScript", "CSS", "Responsive"],
       github: "https://github.com/Shivani2224/Tic-Tac-Toe-React/",
-      live: "",
+      live: "https://shivani2224.github.io/Tic-Tac-Toe-React/",
     },
     {
       id: 2,
@@ -22,7 +22,7 @@ const Projects = () => {
       image: `${process.env.PUBLIC_URL}/images/projects/HR-management.png`,
       tags: ["React", "JavaScript", "TailWind CSS", "Responsive"],
       github: "https://github.com/Shivani2224/HR-management",
-      live: "",
+      live: "https://shivani2224.github.io/HR-management/",
     },
     {
       id: 3,
