@@ -65,7 +65,6 @@ const Projects = () => {
                 index % 2 === 0 ? "" : "lg:grid-flow-dense"
               }`}
             >
-              {/* Project Image */}
               <motion.div
                 className={`lg:col-span-5 relative group ${
                   index % 2 !== 0 ? "" : "lg:col-start-8"
@@ -94,7 +93,6 @@ const Projects = () => {
                 </div>
               </motion.div>
 
-              {/* Project Content */}
               <div
                 className={`lg:col-span-7 ${
                   index % 2 !== 0

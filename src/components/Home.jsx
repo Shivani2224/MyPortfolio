@@ -16,14 +16,12 @@ const Home = () => {
       id="home"
       className="min-h-screen flex items-center justify-center bg-gradient-teal relative overflow-hidden"
     >
-      {/* Optimized background decorations - using CSS only, no animations */}
       <div className="absolute w-full h-full overflow-hidden pointer-events-none opacity-5">
         <div className="absolute w-[300px] h-[300px] bg-white rounded-full top-[10%] left-[10%]"></div>
         <div className="absolute w-[200px] h-[200px] bg-white rounded-full top-[60%] right-[10%]"></div>
         <div className="absolute w-[400px] h-[400px] bg-white rounded-full bottom-[-10%] left-[50%]"></div>
       </div>
 
-      {/* Main content - 8pt grid spacing: 8, 16, 24, 32, 48, 64 */}
       <div className="w-full px-8 relative z-10 flex justify-center items-center min-h-[80vh]">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -31,7 +29,6 @@ const Home = () => {
           transition={{ duration: 0.8 }}
           className="text-center w-full max-w-4xl mx-auto"
         >
-          {/* Heading - 32px bottom spacing */}
           <motion.h1
             className="text-5xl md:text-7xl font-extrabold text-white mb-8 leading-tight"
             initial={{ opacity: 0, y: 30 }}
@@ -42,7 +39,6 @@ const Home = () => {
             <span className="text-primary-dark font-black">Shivani</span>
           </motion.h1>
 
-          {/* Subtitle - 48px bottom spacing */}
           <motion.p
             className="text-xl text-white/95 leading-relaxed mb-12 max-w-2xl mx-auto px-4"
             initial={{ opacity: 0, y: 20 }}
@@ -57,7 +53,6 @@ const Home = () => {
             who loves turning design ideas into real, working code with React & Tailwind.
           </motion.p>
 
-          {/* CTA Buttons - 16px gap, 48px bottom spacing */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -83,7 +78,6 @@ const Home = () => {
             </motion.button>
           </motion.div>
 
-          {/* Social Links - 16px gap */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -122,7 +116,6 @@ const Home = () => {
         </motion.div>
       </div>
 
-      {/* Scroll indicator - 32px from bottom, 8px gap */}
       <motion.div
         className="absolute bottom-8 flex flex-col items-center gap-2 text-white animate-bounce-slow"
         initial={{ opacity: 0 }}
