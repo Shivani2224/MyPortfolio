@@ -1,85 +1,54 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { 
-  FaHtml5, FaCss3Alt, FaJs, FaReact, 
-  FaGitAlt, FaFigma, FaNodeJs
+import {
+  FaHtml5, FaCss3Alt, FaJs, FaReact,
+  FaGitAlt, FaFigma, FaNodeJs, FaBookOpen,
 } from 'react-icons/fa';
-import { 
-  SiTypescript, SiTailwindcss
+import {
+  SiTypescript, SiTailwindcss, SiVite,
 } from 'react-icons/si';
 
-
 const Skills = () => {
-  const skills = [
+  const skillCategories = [
     {
-      name: 'HTML5',
-      icon: <FaHtml5 />,
-      description: 'Semantic markup & accessibility',
-      color: '#e34c26'
+      title: 'Languages',
+      skills: [
+        { name: 'HTML5', icon: <FaHtml5 />, color: '#e34c26' },
+        { name: 'CSS3', icon: <FaCss3Alt />, color: '#1572b6' },
+        { name: 'JavaScript', icon: <FaJs />, color: '#f7df1e' },
+        { name: 'TypeScript', icon: <SiTypescript />, color: '#3178c6' },
+      ],
     },
     {
-      name: 'CSS3',
-      icon: <FaCss3Alt />,
-      description: 'Responsive design & animations',
-      color: '#1572b6'
+      title: 'Frameworks & Libraries',
+      skills: [
+        { name: 'React', icon: <FaReact />, color: '#61dafb' },
+        { name: 'Tailwind CSS', icon: <SiTailwindcss />, color: '#06b6d4' },
+      ],
     },
     {
-      name: 'JavaScript',
-      icon: <FaJs />,
-      description: 'ES6+ & DOM manipulation',
-      color: '#f7df1e'
+      title: 'Tools & Design',
+      skills: [
+        { name: 'Git', icon: <FaGitAlt />, color: '#f05032' },
+        { name: 'Node.js', icon: <FaNodeJs />, color: '#339933' },
+        { name: 'Figma', icon: <FaFigma />, color: '#f24e1e' },
+      ],
     },
-    {
-      name: 'React',
-      icon: <FaReact />,
-      description: 'Component-based UI development',
-      color: '#61dafb'
-    },
-    {
-      name: 'Tailwind CSS',
-      icon: <SiTailwindcss />,
-      description: 'Utility-first CSS framework',
-      color: '#06b6d4'
-    },
-    {
-      name: 'TypeScript',
-      icon: <SiTypescript />,
-      description: 'Type-safe JavaScript',
-      color: '#3178c6'
-    },
-    {
-      name: 'Git',
-      icon: <FaGitAlt />,
-      description: 'Version control',
-      color: '#f05032'
-    },
-    {
-      name: 'Figma',
-      icon: <FaFigma />,
-      description: 'UI/UX design & prototyping',
-      color: '#f24e1e'
-    },
-    {
-      name: 'Node.js',
-      icon: <FaNodeJs />,
-      description: 'Backend JavaScript runtime',
-      color: '#339933'
-    }
   ];
+
+  const learning = ['Next.js', 'Jest & Testing Library', 'REST APIs'];
 
   const container = {
     hidden: { opacity: 0 },
     show: {
       opacity: 1,
-      transition: {
-        staggerChildren: 0.1
-      }
-    }
+      transition: { staggerChildren: 0.08 },
+    },
   };
 
   const item = {
     hidden: { opacity: 0, y: 20 },
-    show: { opacity: 1, y: 0 }
+    show: { opacity: 1, y: 0 },
   };
 
   return (
@@ -94,46 +63,80 @@ const Skills = () => {
           <h2 className="text-4xl md:text-5xl text-center mb-5 text-primary-dark font-bold">
             My Toolkit
           </h2>
-          <p className="text-center text-slate-600 mb-12 text-lg">
+          <p className="text-center text-slate-600 mb-14 text-lg">
             Technologies I use to build stuff
           </p>
 
-          <motion.div
-            variants={container}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true }}
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
-          >
-            {skills.map((skill, index) => (
+          {skillCategories.map((category) => (
+            <div key={category.title} className="mb-12">
+              <div className="flex items-center gap-3 mb-5">
+                <span className="text-xs sm:text-sm font-bold tracking-widest uppercase text-primary whitespace-nowrap">
+                  {category.title}
+                </span>
+                <span className="flex-1 h-px bg-primary/20"></span>
+              </div>
+
               <motion.div
-                key={skill.name}
-                variants={item}
-                whileHover={{ 
-                  y: -8,
-                  scale: 1.05,
-                  transition: { duration: 0.3 }
-                }}
-                className="bg-white rounded-xl p-7 text-center shadow-sm border-2 border-transparent cursor-pointer transition-all duration-300 relative overflow-hidden hover:border-primary hover:shadow-xl hover:bg-gradient-to-br hover:from-white hover:to-teal-50"
+                variants={container}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true }}
+                className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4"
               >
-                <motion.div
-                  whileHover={{ 
-                    rotate: [0, -10, 10, -10, 0],
-                    transition: { duration: 0.5 }
-                  }}
-                  className="text-5xl mb-3 drop-shadow-md"
-                  style={{ color: skill.color }}
-                >
-                  {skill.icon}
-                </motion.div>
-                <h3 className="font-semibold text-primary-dark mb-1 text-lg">
-                  {skill.name}
-                </h3>
-                <p className="text-sm text-slate-500">
-                  {skill.description}
-                </p>
+                {category.skills.map((skill) => (
+                  <motion.div
+                    key={skill.name}
+                    variants={item}
+                    whileHover={{
+                      y: -5,
+                      scale: 1.03,
+                      transition: { duration: 0.3 },
+                    }}
+                    className="bg-white rounded-xl p-5 text-center shadow-sm border-2 border-transparent cursor-pointer transition-all duration-300 hover:border-primary hover:shadow-xl"
+                  >
+                    <motion.div
+                      whileHover={{
+                        rotate: [0, -10, 10, -10, 0],
+                        transition: { duration: 0.5 },
+                      }}
+                      className="text-4xl mb-2 drop-shadow-sm flex justify-center"
+                      style={{ color: skill.color }}
+                    >
+                      {skill.icon}
+                    </motion.div>
+                    <h4 className="font-semibold text-primary-dark text-base">
+                      {skill.name}
+                    </h4>
+                  </motion.div>
+                ))}
               </motion.div>
-            ))}
+            </div>
+          ))}
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mt-14 pt-8 border-t border-primary/20"
+          >
+            <div className="flex items-center gap-3 mb-5">
+              <FaBookOpen className="text-primary" />
+              <span className="text-xs sm:text-sm font-bold tracking-widest uppercase text-primary whitespace-nowrap">
+                Currently Learning
+              </span>
+              <span className="flex-1 h-px bg-primary/20"></span>
+            </div>
+            <div className="flex flex-wrap gap-3">
+              {learning.map((name) => (
+                <span
+                  key={name}
+                  className="bg-white text-primary-dark px-4 py-2 rounded-full text-sm font-semibold border border-primary/20 shadow-sm"
+                >
+                  {name}
+                </span>
+              ))}
+            </div>
           </motion.div>
         </motion.div>
       </div>
