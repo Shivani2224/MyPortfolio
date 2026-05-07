@@ -9,26 +9,6 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Tic-Tac-Toe (React)",
-      description:
-        "A classic Tic-Tac-Toe game built using React. Two players can take turns marking the grid, and the game automatically detects wins, draws, and invalid moves. It highlights the winning combination and allows players to restart the game. This project helped me practice React state, event handling, and conditional rendering.",
-      image: `${process.env.PUBLIC_URL}/images/projects/Tic-Tac-Toe.png`,
-      tags: ["React", "JavaScript", "CSS", "Responsive"],
-      github: "https://github.com/Shivani2224/Tic-Tac-Toe-React/",
-      live: "https://shivani2224.github.io/Tic-Tac-Toe-React/",
-    },
-    {
-      id: 2,
-      title: "HR Management System",
-      description:
-        "A simple HR management web app built with React that helps manage employee data and streamline everyday HR tasks. The system includes features for attendance tracking, leave management, payslips, and time correction requests. It's designed with a clean and intuitive interface to simulate real HR workflows. This project helped me strengthen skills in state management, form handling, and building functional dashboard components.",
-      image: `${process.env.PUBLIC_URL}/images/projects/HR-management.png`,
-      tags: ["React", "JavaScript", "Tailwind CSS", "Responsive"],
-      github: "https://github.com/Shivani2224/HR-management",
-      live: "https://shivani2224.github.io/HR-management/",
-    },
-    {
-      id: 3,
       title: "E-commerce Website Showcase",
       description:
         "A fully responsive e-commerce demo built with React 19 and Vite, featuring real-time product search, category filters, sorting options, and a persistent shopping cart powered by localStorage. Styled with Tailwind CSS for a modern, mobile-first design. This project strengthened my skills in custom React hooks, state management, API integration, and component-driven development.",
@@ -45,21 +25,24 @@ const Projects = () => {
       live: "https://shivani2224.github.io/ecommerce-showcase/",
     },
     {
-      id: 4,
-      title: "Timer",
+      id: 2,
+      title: "HR Management System",
       description:
-        "A fully responsive e-commerce demo built with React 19 and Vite, featuring real-time product search, category filters, sorting options, and a persistent shopping cart powered by localStorage. Styled with Tailwind CSS for a modern, mobile-first design. This project strengthened my skills in custom React hooks, state management, API integration, and component-driven development.",
-      image: `${process.env.PUBLIC_URL}/images/projects/ecommerce-showcase.png`,
-      tags: [
-        "React 19",
-        "Vite",
-        "Tailwind CSS",
-        "Responsive UI",
-        "API Integration",
-        "LocalStorage Cart",
-      ],
-      github: "https://github.com/Shivani2224/ecommerce-showcase",
-      live: "https://shivani2224.github.io/ecommerce-showcase/",
+        "A simple HR management web app built with React that helps manage employee data and streamline everyday HR tasks. The system includes features for attendance tracking, leave management, payslips, and time correction requests. It's designed with a clean and intuitive interface to simulate real HR workflows. This project helped me strengthen skills in state management, form handling, and building functional dashboard components.",
+      image: `${process.env.PUBLIC_URL}/images/projects/HR-management.png`,
+      tags: ["React", "JavaScript", "Tailwind CSS", "Responsive"],
+      github: "https://github.com/Shivani2224/HR-management",
+      live: "https://shivani2224.github.io/HR-management/",
+    },
+    {
+      id: 3,
+      title: "Tic-Tac-Toe (React)",
+      description:
+        "A two-player Tic-Tac-Toe game built with React. Handles turn tracking, win/draw detection, and a winning-row highlight, with a one-click restart. Every cell click flows through React state — no direct DOM access — so the board re-renders predictably on every move. The win-detection logic checks all rows, columns, and diagonals after each turn, and the UI uses conditional rendering to swap between the active board, the win banner, and the draw state. My first hands-on dive into React's state model and event handling, and the project that turned 'I've watched a tutorial' into 'I can build something from scratch.'",
+      image: `${process.env.PUBLIC_URL}/images/projects/Tic-Tac-Toe.png`,
+      tags: ["React", "JavaScript", "CSS", "Responsive"],
+      github: "https://github.com/Shivani2224/Tic-Tac-Toe-React/",
+      live: "https://shivani2224.github.io/Tic-Tac-Toe-React/",
     },
   ];
 
