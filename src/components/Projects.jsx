@@ -11,16 +11,9 @@ const Projects = () => {
       id: 1,
       title: "E-commerce Website Showcase",
       description:
-        "A fully responsive e-commerce demo built with React 19 and Vite, featuring real-time product search, category filters, sorting options, and a persistent shopping cart powered by localStorage. Styled with Tailwind CSS for a modern, mobile-first design. This project strengthened my skills in custom React hooks, state management, API integration, and component-driven development.",
+        "A responsive e-commerce demo built with React 19 and Vite. Features real-time product search, category filters, sorting, and a persistent shopping cart backed by localStorage. Custom React hooks handle cart and filter state, with Tailwind CSS driving the mobile-first UI. The project that took me from 'I know React' to 'I can architect a small app from scratch' — splitting state into focused hooks and keeping components purely for rendering.",
       image: `${process.env.PUBLIC_URL}/images/projects/ecommerce-showcase.png`,
-      tags: [
-        "React 19",
-        "Vite",
-        "Tailwind CSS",
-        "Responsive UI",
-        "API Integration",
-        "LocalStorage Cart",
-      ],
+      tags: ["React", "Vite", "Tailwind CSS", "Responsive"],
       github: "https://github.com/Shivani2224/ecommerce-showcase",
       live: "https://shivani2224.github.io/ecommerce-showcase/",
     },
@@ -28,7 +21,7 @@ const Projects = () => {
       id: 2,
       title: "HR Management System",
       description:
-        "A simple HR management web app built with React that helps manage employee data and streamline everyday HR tasks. The system includes features for attendance tracking, leave management, payslips, and time correction requests. It's designed with a clean and intuitive interface to simulate real HR workflows. This project helped me strengthen skills in state management, form handling, and building functional dashboard components.",
+        "An HR dashboard built with React that simulates real HR workflows — attendance tracking, leave management, payslips, and time correction requests. Each module is a focused component with its own state, communicating via props and callbacks. Forms are controlled inputs with validation, and the layout is responsive through Tailwind CSS. The project that taught me how to break a 'big app' into manageable pieces, each doing one thing well.",
       image: `${process.env.PUBLIC_URL}/images/projects/HR-management.png`,
       tags: ["React", "JavaScript", "Tailwind CSS", "Responsive"],
       github: "https://github.com/Shivani2224/HR-management",

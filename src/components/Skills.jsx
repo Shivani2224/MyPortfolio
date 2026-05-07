@@ -5,7 +5,7 @@ import {
   FaGitAlt, FaFigma, FaNodeJs, FaBookOpen,
 } from 'react-icons/fa';
 import {
-  SiTypescript, SiTailwindcss, SiVite,
+  SiTypescript, SiTailwindcss,
 } from 'react-icons/si';
 
 const Skills = () => {

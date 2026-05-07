@@ -11,19 +11,19 @@ import {
   FaTimes,
 } from "react-icons/fa";
 
+const navItems = [
+  { id: "home", icon: <FaHome />, label: "Home" },
+  { id: "about", icon: <FaUser />, label: "About" },
+  { id: "skills", icon: <FaCode />, label: "Skills" },
+  { id: "projects", icon: <FaBriefcase />, label: "Projects" },
+  { id: "contact", icon: <FaEnvelope />, label: "Contact" },
+];
+
+const resumeUrl = `${process.env.PUBLIC_URL}/resume.pdf`;
+
 const Header = () => {
   const [active, setActive] = useState("home");
   const [isMobileOpen, setIsMobileOpen] = useState(false);
-
-  const navItems = [
-    { id: "home", icon: <FaHome />, label: "Home" },
-    { id: "about", icon: <FaUser />, label: "About" },
-    { id: "skills", icon: <FaCode />, label: "Skills" },
-    { id: "projects", icon: <FaBriefcase />, label: "Projects" },
-    { id: "contact", icon: <FaEnvelope />, label: "Contact" },
-  ];
-
-  const resumeUrl = `${process.env.PUBLIC_URL}/Shivani patel junior front end developer.pdf`;
 
   useEffect(() => {
     const observer = new IntersectionObserver(
