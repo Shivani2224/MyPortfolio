@@ -29,13 +29,13 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: "Tic-Tac-Toe (React)",
+      title: "Focus Timer",
       description:
-        "A two-player Tic-Tac-Toe game built with React. Handles turn tracking, win/draw detection, and a winning-row highlight, with a one-click restart. Every cell click flows through React state — no direct DOM access — so the board re-renders predictably on every move. The win-detection logic checks all rows, columns, and diagonals after each turn, and the UI uses conditional rendering to swap between the active board, the win banner, and the draw state. My first hands-on dive into React's state model and event handling, and the project that turned 'I've watched a tutorial' into 'I can build something from scratch.'",
-      image: `${process.env.PUBLIC_URL}/images/projects/Tic-Tac-Toe.png`,
-      tags: ["React", "JavaScript", "CSS", "Responsive"],
-      github: "https://github.com/Shivani2224/Tic-Tac-Toe-React/",
-      live: "https://shivani2224.github.io/Tic-Tac-Toe-React/",
+        "A Pomodoro-style focus timer built with React. Lets you set custom work and break intervals, then runs a clean countdown with start, pause, and reset controls. The timer logic lives in a custom hook that handles the interval lifecycle with useEffect — starting on play, clearing on pause or unmount — so the UI stays in sync without leaking timers across renders. Session state, progress, and the active mode (focus vs. break) all flow through React state, with conditional rendering swapping the controls and color theme as the session progresses. I also wrote unit tests with React Testing Library and Jest — using fake timers to advance the clock and assert on countdown behavior, mode transitions, and the start/pause/reset flow — which is where I really started to appreciate how testable code and clean state design go hand in hand. The project that pushed me past basic state into thinking about side effects, cleanup, and how to package timer behavior into a reusable, well-tested hook.",
+      image: `${process.env.PUBLIC_URL}/images/projects/focus-timer.png`,
+      tags: ["React", "Jest", "Testing Library", "Tailwind CSS", "Custom Hooks"],
+      github: "https://github.com/Shivani2224/Timer-app",
+      live: "https://timer-app-three-red.vercel.app/",
     },
   ];
 
