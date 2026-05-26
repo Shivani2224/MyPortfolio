@@ -19,16 +19,6 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: "HR Management System",
-      description:
-        "An HR dashboard built with React that simulates real HR workflows — attendance tracking, leave management, payslips, and time correction requests. Each module is a focused component with its own state, communicating via props and callbacks. Forms are controlled inputs with validation, and the layout is responsive through Tailwind CSS. The project that taught me how to break a 'big app' into manageable pieces, each doing one thing well.",
-      image: `${process.env.PUBLIC_URL}/images/projects/HR-management.png`,
-      tags: ["React", "JavaScript", "Tailwind CSS", "Responsive"],
-      github: "https://github.com/Shivani2224/HR-management",
-      live: "https://shivani2224.github.io/HR-management/",
-    },
-    {
-      id: 3,
       title: "Focus Timer",
       description:
         "A Pomodoro-style focus timer built with React. Lets you set custom work and break intervals, then runs a clean countdown with start, pause, and reset controls. The timer logic lives in a custom hook that handles the interval lifecycle with useEffect — starting on play, clearing on pause or unmount — so the UI stays in sync without leaking timers across renders. Session state, progress, and the active mode (focus vs. break) all flow through React state, with conditional rendering swapping the controls and color theme as the session progresses. I also wrote unit tests with React Testing Library and Jest — using fake timers to advance the clock and assert on countdown behavior, mode transitions, and the start/pause/reset flow — which is where I really started to appreciate how testable code and clean state design go hand in hand. The project that pushed me past basic state into thinking about side effects, cleanup, and how to package timer behavior into a reusable, well-tested hook.",
@@ -36,6 +26,16 @@ const Projects = () => {
       tags: ["React", "Jest", "Testing Library", "Tailwind CSS", "Custom Hooks"],
       github: "https://github.com/Shivani2224/Timer-app",
       live: "https://timer-app-three-red.vercel.app/",
+    },
+    {
+      id: 3,
+      title: "HR Management System",
+      description:
+        "An HR dashboard built with React that simulates real HR workflows — attendance tracking, leave management, payslips, and time correction requests. Each module is a focused component with its own state, communicating via props and callbacks. Forms are controlled inputs with validation, and the layout is responsive through Tailwind CSS. The project that taught me how to break a 'big app' into manageable pieces, each doing one thing well.",
+      image: `${process.env.PUBLIC_URL}/images/projects/HR-management.png`,
+      tags: ["React", "JavaScript", "Tailwind CSS", "Responsive"],
+      github: "https://github.com/Shivani2224/HR-management",
+      live: "https://shivani2224.github.io/HR-management/",
     },
   ];
 
